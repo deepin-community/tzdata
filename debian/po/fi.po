@@ -1077,14 +1077,6 @@ msgstr "Glace Bay"
 #. Translators: This is a city name.
 #. Do not translate underscores. You can use spaces instead.
 #: ../tzdata.templates:3001
-msgid "Godthab"
-msgstr "Nuuk"
-
-#. Type: select
-#. Choices
-#. Translators: This is a city name.
-#. Do not translate underscores. You can use spaces instead.
-#: ../tzdata.templates:3001
 msgid "Goose_Bay"
 msgstr "Goose Bay"
 
@@ -2103,14 +2095,6 @@ msgstr "Brunei"
 #: ../tzdata.templates:6001
 msgid "Chita"
 msgstr ""
-
-#. Type: select
-#. Choices
-#. Translators: This is a city name.
-#. Do not translate underscores. You can use spaces instead.
-#: ../tzdata.templates:6001
-msgid "Choibalsan"
-msgstr "Choibalsan"
 
 #. Type: select
 #. Choices

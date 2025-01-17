@@ -28,6 +28,12 @@ def read_backwards_links(backwards_file: pathlib.Path) -> dict[str, str]:
     return backwards_links
 
 
+def read_link(link: pathlib.Path) -> pathlib.Path:
+    """Return the absolute path to which the symbolic link points."""
+    destination = link.parent / link.readlink()
+    return pathlib.Path(os.path.normpath(destination))
+
+
 class TestZoneinfo(unittest.TestCase):
     """Test timezones using Python's zoneinfo module."""
 
@@ -132,6 +138,28 @@ class TestZoneinfo(unittest.TestCase):
                 future = now + datetime.timedelta(days=30 * 6)
                 self._assert_equal_zones_at_date(future, tz_link, tz_target)
 
+    def assert_not_symlink_to_symlink(self, timezone_path: pathlib.Path) -> None:
+        """Assert that the timezone is not a symlink to another symlink."""
+        if not timezone_path.is_symlink():
+            return
+        destination = read_link(timezone_path)
+        if not destination.is_symlink():
+            return
+        self.fail(
+            f"Symlink to symlink found: {timezone_path} -> {destination}"
+            f" -> {read_link(destination)}"
+        )
+
+    def test_no_symlinks_to_symlinks(self) -> None:
+        """Check that no timezone is a symlink to another symlink."""
+        for timezone in sorted(zoneinfo.available_timezones()):
+            if timezone == "localtime":
+                continue
+            with self.subTest(timezone):
+                for tzpath in zoneinfo.TZPATH:
+                    timezone_path = pathlib.Path(tzpath) / timezone
+                    self.assert_not_symlink_to_symlink(timezone_path)
+
     def test_timezones(self) -> None:
         """Test all zones to load, have a name, and have a reasonable offset."""
         for zone in zoneinfo.available_timezones():
@@ -161,6 +189,18 @@ class TestZoneinfo(unittest.TestCase):
         tzinfo = zoneinfo.ZoneInfo("Antarctica/Vostok")
         date = datetime.datetime(2023, 12, 19, tzinfo=tzinfo)
         self.assertEqual(self._hours(date.utcoffset()), 5)
+
+    def test_2024a(self) -> None:
+        """Test 2024a release: Kazakhstan being on +05 from 2024-03-01 on."""
+        tzinfo = zoneinfo.ZoneInfo("Asia/Almaty")
+        date = datetime.datetime(2024, 3, 2, tzinfo=tzinfo)
+        self.assertEqual(self._hours(date.utcoffset()), 5)
+
+    def test_2024b(self) -> None:
+        """Test 2024b release: Azores did not observe DST from 1977 to 1981."""
+        tzinfo = zoneinfo.ZoneInfo("Atlantic/Azores")
+        date = datetime.datetime(1980, 7, 3, tzinfo=tzinfo)
+        self.assertEqual(self._hours(date.utcoffset()), -1)
 
 
 def main() -> None:
