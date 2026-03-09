@@ -10,7 +10,9 @@ import os
 import pathlib
 import sys
 
-import natsort
+# Drop script directory to workaround https://launchpad.net/bugs/2018666
+sys.path.pop(0)
+import natsort  # noqa: E402, pylint: disable=wrong-import-position
 
 LOG_FORMAT = "%(name)s %(levelname)s: %(message)s"
 __script_name__ = os.path.basename(sys.argv[0]) if __name__ == "__main__" else __name__
@@ -37,6 +39,7 @@ EXCLUDE_SYMLINKS = {
     "America/Catamarca",
     "America/Cordoba",
     "America/Fort_Wayne",
+    "America/Godthab",
     "America/Indianapolis",
     "America/Jujuy",
     "America/Knox_IN",
@@ -46,6 +49,7 @@ EXCLUDE_SYMLINKS = {
     "Antarctica/South_Pole",
     "Asia/Ashkhabad",
     "Asia/Calcutta",
+    "Asia/Choibalsan",
     "Asia/Chungking",
     "Asia/Dacca",
     "Asia/Katmandu",
@@ -91,7 +95,6 @@ INCLUDE_SYMLINKS = {
     "America/Atka",
     "America/Coral_Harbour",
     "America/Ensenada",
-    "America/Godthab",
     "America/Kralendijk",
     "America/Lower_Princes",
     "America/Marigot",

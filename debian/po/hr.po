@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Debian-installer 1st-stage master file HR\n"
 "Report-Msgid-Bugs-To: tzdata@packages.debian.org\n"
-"POT-Creation-Date: 2023-08-07 14:48+0200\n"
+"POT-Creation-Date: 2025-03-23 23:17+0000\n"
 "PO-Revision-Date: 2023-05-09 10:18+0200\n"
 "Last-Translator: Tomislav Krznar <tomislav.krznar@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -954,6 +954,14 @@ msgstr "Kostarika"
 #. Translators: This is a city name.
 #. Do not translate underscores. You can use spaces instead.
 #: ../tzdata.templates:3001
+msgid "Coyhaique"
+msgstr ""
+
+#. Type: select
+#. Choices
+#. Translators: This is a city name.
+#. Do not translate underscores. You can use spaces instead.
+#: ../tzdata.templates:3001
 msgid "Creston"
 msgstr "Creston"
 
@@ -1076,14 +1084,6 @@ msgstr "Fortaleza"
 #: ../tzdata.templates:3001
 msgid "Glace_Bay"
 msgstr "Glace Bay"
-
-#. Type: select
-#. Choices
-#. Translators: This is a city name.
-#. Do not translate underscores. You can use spaces instead.
-#: ../tzdata.templates:3001
-msgid "Godthab"
-msgstr "Godthab"
 
 #. Type: select
 #. Choices
@@ -2108,14 +2108,6 @@ msgstr "Brunei"
 #: ../tzdata.templates:6001
 msgid "Chita"
 msgstr "Chita"
-
-#. Type: select
-#. Choices
-#. Translators: This is a city name.
-#. Do not translate underscores. You can use spaces instead.
-#: ../tzdata.templates:6001
-msgid "Choibalsan"
-msgstr "Choibalsan"
 
 #. Type: select
 #. Choices

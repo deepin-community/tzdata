@@ -1,21 +1,22 @@
 # Mesajele în limba română pentru pachetul tzdata.
 # Romanian translation of tzdata.
-# Copyright © 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright © 2023, 2025 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the tzdata package.
 #
-# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2023.
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2023, 2025.
 #
 # Cronologia traducerii fișierului „tzdata”:
 # Traducerea inițială, făcută de R-GC, pentru versiunea tzdata 2022g-7(2023-02-06).
 # Actualizare a traducerii pentru versiunea 2023c-6, făcută de R-GC, iun-2023.
+# Actualizare a traducerii pentru versiunea 2025b-1, făcută de R-GC, apr-2025.
 # Actualizare a traducerii pentru versiunea Y, făcută de X, Y(anul).
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: tzdata 2023c-6\n"
+"Project-Id-Version: tzdata 2025b-1\n"
 "Report-Msgid-Bugs-To: tzdata@packages.debian.org\n"
-"POT-Creation-Date: 2023-08-07 14:48+0200\n"
-"PO-Revision-Date: 2023-06-23 00:02+0200\n"
+"POT-Creation-Date: 2025-03-23 23:17+0000\n"
+"PO-Revision-Date: 2025-04-01 12:01+0200\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "Language: ro\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && "
 "n%100<=19) ? 1 : 2);\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #. Type: select
 #. Choices
@@ -958,6 +959,14 @@ msgstr "Costa Rica"
 #. Translators: This is a city name.
 #. Do not translate underscores. You can use spaces instead.
 #: ../tzdata.templates:3001
+msgid "Coyhaique"
+msgstr "Coyhaique"
+
+#. Type: select
+#. Choices
+#. Translators: This is a city name.
+#. Do not translate underscores. You can use spaces instead.
+#: ../tzdata.templates:3001
 msgid "Creston"
 msgstr "Creston"
 
@@ -1080,14 +1089,6 @@ msgstr "Fortaleza"
 #: ../tzdata.templates:3001
 msgid "Glace_Bay"
 msgstr "Golful Glace"
-
-#. Type: select
-#. Choices
-#. Translators: This is a city name.
-#. Do not translate underscores. You can use spaces instead.
-#: ../tzdata.templates:3001
-msgid "Godthab"
-msgstr "Godthab"
 
 #. Type: select
 #. Choices
@@ -2112,14 +2113,6 @@ msgstr "Brunei"
 #: ../tzdata.templates:6001
 msgid "Chita"
 msgstr "Chita"
-
-#. Type: select
-#. Choices
-#. Translators: This is a city name.
-#. Do not translate underscores. You can use spaces instead.
-#: ../tzdata.templates:6001
-msgid "Choibalsan"
-msgstr "Choibalsan"
 
 #. Type: select
 #. Choices

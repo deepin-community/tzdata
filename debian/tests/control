@@ -1,3 +1,7 @@
+Tests: chrono
+Depends: g++, python3 (>= 3.9), tzdata
+Restrictions: allow-stderr
+
 Tests: debconf
 Depends: python3, tzdata
 Restrictions: allow-stderr needs-root
