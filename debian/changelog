@@ -1,8 +1,20 @@
-tzdata (2025b-4+deb13u1deepin1) unstable; urgency=medium
+tzdata (2026b-0+deb13u1) trixie; urgency=medium
 
-  * Convert Asia/Beijing to Asia/Shanghai.
+  * New upstream version 2026b:
+    - British Columbia moved to permanent -07 on 2026-03-09, so it will not
+      fall back from -07 to -08 on 2026-11-01.
 
- -- tunaichao <tunaichao@uniontech.com>  Wed, 11 Mar 2026 14:22:40 +0800
+ -- Aurelien Jarno <aurel32@debian.org>  Tue, 28 Apr 2026 20:45:23 +0200
+
+tzdata (2026a-0+deb13u1) trixie; urgency=medium
+
+  * New upstream version 2026a:
+    - No leap second on 2026-06-30
+    - Moldova has used EU transition times since 2022
+  * Drop No-leap-second-on-2025-12-31.patch (merged upstream)
+  * gbp.conf: change branch to trixie
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 04 Mar 2026 00:06:13 +0100
 
 tzdata (2025b-4+deb13u1) trixie; urgency=medium
 
