@@ -1,3 +1,9 @@
+tzdata (2026b-0+deb13u1deepin1) unstable; urgency=medium
+
+  * Convert Asia/Beijing to Asia/Shanghai.
+
+ -- lichenggang <lichenggang@uniontech.com>  Tue, 21 Jul 2026 10:46:24 +0800
+
 tzdata (2026b-0+deb13u1) trixie; urgency=medium
 
   * New upstream version 2026b:
