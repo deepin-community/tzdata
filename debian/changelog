@@ -1,8 +1,35 @@
-tzdata (2026b-0+deb13u1deepin1) unstable; urgency=medium
+tzdata (2026f-0+deb13u1) trixie; urgency=medium
 
-  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+  * New upstream version 2026f:
+    - Cuba will not fall back to -05 on 2026-11-01 and instead plans to
+      maintain -04 through 2027-11-07
+    - Mention that the "expires" in the leapseconds file is now obsolete
+  * Update debian/upstream/signing-key.asc
 
- -- tunaichao <tunaichao@uniontech.com>  Mon, 21 Sep 2026 16:18:42 +0800
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 28 Oct 2026 21:57:59 +0100
+
+tzdata (2026e-0+deb13u1) trixie; urgency=medium
+
+  * New upstream version 2026d:
+    - Canada’s Northwest Territories moved to permanent -06 on 2026-08-21 and
+      will not fall back from -06 to -07 on 2026-11-01
+  * New upstream version 2026e (Closes: #1150854):
+    - Manitoba moves to permanent -05 on 2026-10-31 and will not fall back
+      from -05 to -06 on 2026-11-01
+  * Revert POSIX conformance of old SysV names EST5EDT, CST6CDT, MST7MDT and
+    PST8PDT
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 17 Oct 2026 22:28:09 +0200
+
+tzdata (2026c-0+deb13u1) trixie; urgency=medium
+
+  * New upstream version 2026c:
+    - Alberta moved to permanent -06 on 2026-06-18, so it will not fall back
+       from -06 to -07 on 2026-11-01.
+    - Morocco moves to permanent +00 on 2026-09-20.
+    - No leap second on 2026-12-31.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 16 Aug 2026 21:05:24 +0200
 
 tzdata (2026b-0+deb13u1) trixie; urgency=medium
 
